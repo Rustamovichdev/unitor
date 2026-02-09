@@ -1,19 +1,36 @@
-import { Button } from "antd";
+
+
 import type { FC } from "react";
 
+import { Link } from "react-router-dom";
+import menuData from "../context/menuData";
+
 const App: FC = () => {
-<<<<<<< HEAD
     return (
         <>
-            saasas
-            <Button className='btn'>Click me</Button>
+            <main>
+                <section>
+                    <div>
+                        {/* icon */}
+
+                    </div>
+                    <div>
+                        {menuData.map((item) => (
+                            <Link key={item.id} to={item.path}>
+                                {item.title}
+                            </Link>
+                        ))}
+                    </div>
+                    <div>
+                        {/* logout */}
+                    </div>
+                </section>
+                <section>
+
+                </section>
+            </main>
         </>
     );
-=======
-    return <>Salom'
-        <section>salommmmmmm</section>
-    </>;
->>>>>>> 269847b8bf73af20ba690884ab13cbf512935ab9
 };
 
 export default App;
