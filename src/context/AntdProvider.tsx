@@ -18,7 +18,10 @@ const AntdProvider: FC<AntdConfigProviderProps> = ({ children }) => {
                         defaultBg: "#343734",
 
                     },
-                    Card:{}
+                    Checkbox: {
+                        colorBorder: "#7c6fd6",
+                        colorPrimaryHover:"#9988ee"
+                    }
                 },
             }}
         >
