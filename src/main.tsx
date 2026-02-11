@@ -3,11 +3,16 @@ import { createRoot } from "react-dom/client";
 import "./index.css";
 import App from "./app";
 import AntdProvider from "./context/AntdProvider";
+import Auth from "./features/auth";
+import { BrowserRouter } from "react-router-dom";
 
 createRoot(document.getElementById("root")!).render(
+    <BrowserRouter>
     <StrictMode>
         {/* <AntdProvider> */}
-        <App />
+        {/* <Auth/> */}
+        <App/>
         {/* </AntdProvider> */}
     </StrictMode>,
+    </BrowserRouter>
 );
