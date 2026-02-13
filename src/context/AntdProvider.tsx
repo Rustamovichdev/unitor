@@ -22,6 +22,7 @@ const AntdProvider: FC<AntdConfigProviderProps> = ({ children }) => {
                         colorBorder: "#7c6fd6",
                         colorPrimaryHover:"#9988ee"
                     }
+                    
                 },
             }}
         >
