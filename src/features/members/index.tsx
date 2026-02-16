@@ -1,6 +1,7 @@
 import type { FC } from "react";
 import SearchSide from "../../shared/components/search";
 import AddNew from "../../shared/components/addNew";
+import TableComp from "../../shared/components/Table";
 
 const Members: FC = () => {
     return (
@@ -9,8 +10,13 @@ const Members: FC = () => {
                 <SearchSide />
                 <div>
                     <AddNew />
+
                 </div>
+                
             </div>
+            <div>
+                    <TableComp />
+                </div>
         </section>
     );
 };
