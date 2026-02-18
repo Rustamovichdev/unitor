@@ -1,5 +1,6 @@
 import type { ReactNode } from "react";
 import { MembersPage } from "../features";
+import Pos from "../shared/components/pos";
 
 interface Iroutes {
     id: number;
@@ -24,7 +25,7 @@ export const routes: Iroutes[] = [
         id: 3,
 
         path: "/pos",
-        elements: "POS",
+        elements: <Pos/>,
     },
     {
         id: 4,
